@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600&display=swap');
+
+h2, h3, h4, h5, p {
+  font-family: "Red Hat Display", sans-serif;
+}
+.red-hat-display-400 {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Peso normal */
+    font-style: normal;
+}
+  
+  .red-hat-display-600 {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Peso seminegrita */
+    font-style: normal;
+}
+
+body {
+    margin:0;
+}
+
+/* HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* El título (nombre/logo) */
+.top h1 {
+    font-family: "Pinyon Script", cursive;  /* Fuente añadida */
+    font-style: italic;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 400;
+    margin-left: 0px;
+    display: flex;
+}
+
+/* Estilos generales para el encabezado */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* El título (nombre/logo) */
+.top h1 {
+    font-family: "Pinyon Script", cursive;  /* Fuente añadida */
+    font-style: italic;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+    margin-left: 0px;
+    display: flex;
+}
+
+
+/* Contenedor de la lista de navegación y el icono de hamburguesa */
+.lista-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Lista del menú */
+.lista-top ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Los elementos de la lista */
+.lista-top li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los elementos de la lista */
+.lista-top li:hover {
+    color: #0056b3;
+}
+
+/* Icono del menú (hamburguesa) */
+.menu-icon {
+    display: none; /* Inicialmente oculto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    width: 30px;  /* Tamaño ajustado del contenedor del icono */
+    height: 30px; /* Tamaño ajustado del contenedor del icono */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Las barras dentro del icono */
+.menu-icon .bar {
+    width: 100%;        /* Las barras ocupan todo el ancho */
+    height: 5px;        /* Altura de las barras */
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Ajustamos el tamaño de la imagen del menú (icono) */
+.menu-img {
+    width: 30px;  /* Cambia el tamaño aquí (ancho) */
+    height: 30px; /* Cambia el tamaño aquí (alto) */
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 600px) {
+    /* Mostrar el icono del menú en pantallas pequeñas */
+    .menu-icon {
+        display: flex; /* Asegúrate de que se muestre solo en móviles */
+    }
+
+    /* Ajustamos la imagen del icono para que se vea en móvil */
+    .menu-img {
+        width: 30px;  /* Puedes ajustar el tamaño a 30px o lo que necesites */
+        height: 30px; /* Igualmente el alto */
+        padding-right: 5px;
+    }
+
+    /* Ocultar la lista de menú en móviles */
+    .lista-top ul {
+        display: none;
+        width: 100%;
+    }
+
+    /* Cuando el menú esté abierto, mostrar la lista de menú */
+    .lista-top.show ul {
+        display: block;
+        position: absolute;
+        top: 60px; /* Espaciado debajo del encabezado fijo */
+        left: 0;
+        background-color: #f8f9fa;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .lista-top ul {
+        flex-direction: column; /* Cambia la lista a columna */
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Los elementos de la lista en móviles */
+    .lista-top li {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media query para pantallas de escritorio (600px en adelante) */
+@media (min-width: 601px) {
+    .lista-top ul {
+        display: flex; /* Siempre mostrar la lista en escritorio */
+    }
+
+    .menu-icon {
+        display: none; /* Ocultar en pantallas grandes */
+    }
+}

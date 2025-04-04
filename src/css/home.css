@@ -1,0 +1,46 @@
+
+/* general.css */
+
+/* Estilos generales para la sección de descripción */
+.description {
+    padding: 20px;
+    text-align: center;
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
+
+}
+
+/* Contenedor de las secciones "¿Quiénes somos?" y "¿Qué te ofrecemos?" */
+.quienes-somos, .que-te-ofrecemos {
+    margin-bottom: 60px; /* Espaciado entre las secciones */
+}
+
+/* Estilos para los h3 (títulos) en ambas secciones */
+.quienes-somos h3, .que-te-ofrecemos h3 {
+    font-family: "Red Hat Display", sans-serif; /* Asegúrate de haber importado la fuente correctamente */
+    font-weight: 800; /* Negrita fuerte */
+    font-size: 1.8rem; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio debajo del h3 */
+    text-align: center;
+}
+
+/* Estilos para los párrafos en ambas secciones */
+.quienes-somos p, .que-te-ofrecemos p {
+    font-family: Arial, sans-serif; /* O la fuente que prefieras */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dcdada; /* Cambié el color a un gris oscuro para mejorar la legibilidad */
+    max-width: 800px; /* Limitar el ancho para mayor legibilidad */
+    margin: 0 auto; /* Centrar el texto */
+    padding: 0 10px; /* Un poco de padding para los lados */
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 600px) {
+    .quienes-somos h3, .que-te-ofrecemos h3 {
+        font-size: 1.5rem; /* Reducir tamaño en pantallas pequeñas */
+    }
+
+    .quienes-somos p, .que-te-ofrecemos p {
+        font-size: 0.95rem; /* Reducir tamaño de párrafo en pantallas pequeñas */
+    }
+}
