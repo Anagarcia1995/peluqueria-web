@@ -1,0 +1,102 @@
+/* Estilos generales para la sección de servicios */
+hr {
+    width: 50%;
+}
+.title-servicios {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.subtitle-servicios {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* Tamaño de subtítulo */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.texto-servicios {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.3rem;
+    color: #4e4d4d;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Limita el ancho para mayor legibilidad */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+
+}
+
+.button-servicios {
+    width: 180px;
+    height: 40px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.button-servicios:active {
+    color: #666;
+    box-shadow: inset 2px 2px 6px #c5c5c5, inset -2px -2px 8px #ffffff;
+}
+
+/* Contenedor de los servicios */
+.container-servicios {
+    margin-bottom: 60px;
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 600px) {
+    .title-servicios {
+        font-size: 1.5rem; /* Reducir tamaño de título en pantallas pequeñas */
+    }
+
+    .subtitle-servicios {
+        font-size: 1.2rem; /* Reducir tamaño de subtítulo en pantallas pequeñas */
+    }
+
+    .texto-servicios {
+        font-size: 0.95rem; /* Reducir tamaño de texto en pantallas pequeñas */
+        padding: 0 10px;
+    }
+
+    .button-servicios {
+        width: 150px; /* Ajustar el tamaño del botón en pantallas pequeñas */
+        font-size: 12px; /* Reducir el tamaño del texto del botón */
+    }
+
+    .container-servicios {
+        padding: 0 20px; /* Añadir algo de padding a los contenedores */
+    }
+}
+
+/* Media query para pantallas de tabletas en adelante */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .title-servicios {
+        font-size: 1.8rem; /* Ajustar tamaño en pantallas medianas */
+    }
+
+    .subtitle-servicios {
+        font-size: 1.4rem; /* Ajustar subtítulo */
+    }
+
+    .button-servicios {
+        width: 160px; /* Ajustar tamaño del botón */
+    }
+}

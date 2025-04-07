@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600&display=swap');
 
-h2, h3, h4, h5, p {
+h2, h3, h4, h5, p, button {
   font-family: "Red Hat Display", sans-serif;
 }
 .red-hat-display-400 {
     font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Peso normal */
+    font-weight: 400; 
     font-style: normal;
 }
   
@@ -18,27 +18,15 @@ h2, h3, h4, h5, p {
     font-style: normal;
 }
 
+  
+
 body {
     margin:0;
+    background-color: #ffffff;
 }
 
 /* HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    background-color: #ffffff;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 
 /* El título (nombre/logo) */
 .top h1 {
@@ -65,7 +53,7 @@ body {
     left: 0;
     width: 100%;
     height: 60px;
-    z-index: 1000;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -172,12 +160,15 @@ body {
     .lista-top ul {
         flex-direction: column; /* Cambia la lista a columna */
         gap: 20px;
-        text-align: center;
+        text-align: right;        
     }
 
     /* Los elementos de la lista en móviles */
     .lista-top li {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        color:inherit;
+        font-family: "Red Hat Display", sans-serif;
+        margin-right: 20px;
     }
 }
 

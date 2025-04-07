@@ -1,0 +1,83 @@
+.title-estudio {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.subtitle-estudio {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+    line-height: 2;
+    line-height: 2;
+}
+
+.form {
+    width: 200px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+
+input {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color:  #e8e8e89c;
+    color: rgb(50, 50, 50);
+    border: 1px solid #e8e8e8;
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #ffffff;
+}
+
+input::placeholder {
+    color: rgb(62, 62, 62);
+}
+
+input:hover, input:focus {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #ffffff;
+    outline: none;
+}
+
+.button-form {
+    width: 100px;
+    height: 40px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+
+.button-servicios:active {
+    color: #666;
+    box-shadow: inset 2px 2px 6px #c5c5c5, inset -2px -2px 8px #ffffff;
+}

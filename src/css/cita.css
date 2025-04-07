@@ -1,0 +1,35 @@
+.title-cita {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.texto-cita {
+    padding: 30px;
+    text-align:center;
+    margin-top: 0; 
+    line-height: 2;
+}
+.info {
+    padding: 30px;
+    text-align:left;
+    margin-top: 0; 
+    margin-left: 0;
+    line-height: 2;
+}
+
+
+.tel-loc {
+    color: inherit
+}
+
+.icono-telefono {
+    width: 20px; /* Ajusta el tamaño del icono */
+    height: 20px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinea el icono con el texto */
+  }
+  

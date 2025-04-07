@@ -31,7 +31,7 @@ const HomePage = () => {
     return (
         <div>
             <div className='top'>
-                <h1>Peluquería María</h1>
+                <h1>Tú Peluquería </h1>
                 
                 {/* Contenedor del ícono de hamburguesa */}
                 <div className='menu-icon' onClick={toggleMenu}>
@@ -41,10 +41,10 @@ const HomePage = () => {
                 {/* Lista del menú */}
                 <div className={`lista-top ${menuOpen ? 'show' : ''}`}>
                     <ul>
-                        <li onClick={inicioHandle}>inicio</li>
-                        <li onClick={serviciosHandle}>nuestros servicios</li>
-                        <li onClick={estudioHandle}>estudio de tu cabello</li>
-                        <li onClick={citaHandle}>pide tu cita</li>
+                        <li onClick={inicioHandle}>INICIO</li>
+                        <li onClick={serviciosHandle}>NUESTROS SERVICIOS</li>
+                        <li onClick={estudioHandle}>ESTUDIO DE TU CABELLO</li>
+                        <li onClick={citaHandle}>PIDE TU CITA</li>
                     </ul>
                 </div>
             </div>
