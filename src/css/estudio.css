@@ -1,7 +1,7 @@
 .title-estudio {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-top: 90px;
     margin-bottom: 40px;
@@ -10,13 +10,12 @@
 .subtitle-estudio {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 35px;
     margin-bottom: 35px;
     margin-left: 18px;
     margin-right: 18px;
     text-align: center;
-    line-height: 2;
     line-height: 2;
 }
 

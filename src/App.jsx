@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 
 import HomePage from './pages/HomePage'
 import ServiciosPage from './pages/ServiciosPage'
-import EstudioCabelloPage from './pages/estudioCabelloPage';
+import EstudioCabelloPage from './pages/EstudioCabelloPage';
 import CitaPage from './pages/CitaPage';
 
 function App() {
